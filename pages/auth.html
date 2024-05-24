@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script defer="defer" src="js/js.js"></script>
+    <title>Завод «Гален»</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+              <div class="header_menu_upper">
+                <div class="header_logo-body">
+                  <a href="/index.php" class="header__logo"><img class="main-logo" src="/img/image 35.png" alt="logo"></a>
+                </div>
+                <div class="header_text-body">
+                  <div class="header__day">
+                    <div class="day_work">Пн-Пт: с&nbsp;9.00 до&nbsp;18.00</div>
+                    <div class="day_vacation">Сб-Вс: выходной</div>
+                  </div>
+                  <div class="header__contacts">
+                    <a href="tel:+79059245807" class="tell">+7 <span class="inic">(905)</span> 924-58-07</a>
+                    <a href="mailto:alfit-galen@mail.ru" class="email">alfit-galen@mail.ru</a>
+                  </div>
+                  <button type="button" class="header_burger burger btn-reset" data-burger="">
+                    <span class="burger__line"></span>
+                  </button>
+                  <div class="header_buttons">
+                    <div class="icon_butt">
+                      <a href="https://t.me/CTM_Alfit" target="_blank" class="small_icon"><img class="icon_button" src="/img/image 36.png" alt="telegram"></a>
+                    </div>
+                    <div class="icon_butt">
+                      <a href="https://wa.me/send?phone=79059245807" target="_blank" class="small_icon"><img src="/img/image 37.png" alt="tell"></a>
+                    </div>
+                    <a class="a-large" href="#page-form">
+                      Оставить заявку
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <nav class="nav" data-menu="">
+                <ul class="nav_body list-reset">
+                  <li class="nav_item">
+                    <a class="nav_link" data-menu-item="" href="#section-1">О&nbsp;компании</a>
+                  </li>
+                  <li class="nav_item">
+                    <a class="nav_link" data-menu-item="" href="#products">Продукция</a>
+                  </li>
+                  <li class="nav_item">
+                    <a class="nav_link" data-menu-item="" href="#stage">Этапы работ</a>
+                  </li>
+                  <li class="nav_item">
+                    <a class="nav_link" data-menu-item="" href="#block_text-info">Наши возможности</a>
+                  </li>
+                  <li class="nav_item">
+                    <a class="nav_link" data-menu-item="" href="#numbers">Доверие</a>
+                  </li>
+                  <li class="nav_item">
+                    <a class="nav_link" data-menu-item="" href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+        </header>
+        <div class="container">
+            <main>
+                <section>
+                    <div class="page-form appear" id="page-form">
+                      <div class="page-form_title">
+                        Вход в аккаунт
+                      </div>
+                      <form class="page-form_body" action="/php/auth.php" method="POST">
+                        <input type="hidden" name="access_key" value="5acddc82-82aa-4d13-b89b-9b627879d172">
+                        <input class="form_input" type="text" maxlength="20" placeholder="Введите логин" name="login">
+                        <input class="form_input" type="password" maxlength="20" placeholder="Введите пароль" name="password">
+                        <div class="buttons-body-form">
+                          <button class="form_button" type="submit">Оставить заявку</button>
+                          <label class="check-container"><a class="form-link" href="registr.html">Зарегистрироваться</a>, если вы этого не сделали.
+                            <span class="checkmark"></span></label>
+                        </div>
+                      </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_body">
+                <div class="footer_left">
+                    <div class="left-inferior">
+                        2024 Контрактное производство фитопродукции                    </div>
+                    <a href="https://ctm.alfit.ru/policy/" class="left-supperior">Политика конфиденциальности</a>
+                </div>
+                <a href="#" target="_blank" class="footer_right">
+                    <img class="fotter_img" src="/img/image 35.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
